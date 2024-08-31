@@ -1,0 +1,10 @@
+.footer {
+    width: 100%;
+    background-color:#0004ff; /* Define a cor de fundo do rodapé. */
+    color: white; /* Define a cor do texto como branco. */
+    padding: 1rem; /* Adiciona preenchimento ao redor do conteúdo do rodapé. */
+    text-align: center; /* Centraliza o texto no rodapé. */
+    position: static; /* Faz com que o rodapé permaneça fixo na parte inferior da tela. */
+    bottom: 0; /* Posiciona o rodapé na parte inferior da tela. */
+  }
+  

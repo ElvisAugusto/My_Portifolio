@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilizando o contêiner como grid com 3 colunas */
+.grid-container {
+  display: grid; /* Define o layout como grid */
+  grid-template-columns: repeat(5, 1fr); /* Cria 3 colunas de igual largura (1fr significa uma fração do espaço disponível) */
+  gap: 10px; /* Define o espaçamento de 10px entre os quadrados */
+  padding: 20px; /* Adiciona 20px de espaçamento interno ao redor do contêiner (não afeta o espaçamento entre as divs) */
+  text-align: center;
+}
+
+
+/* Estilizando cada quadrado */
+.grid-item {
+  background-color: rgb(255, 255, 255); /* Define a cor de fundo dos quadrados como branca */
+  color: rgb(0, 0, 0); /* Define a cor do texto como preta */
+  padding: 20px; /* Adiciona 20px de espaçamento interno dentro de cada quadrado */
+  text-align: center; /* Centraliza o texto horizontalmente dentro do quadrado */
+  font-size: 20px; /* Define o tamanho da fonte como 20px */
+  border-radius: 8px; /* Adiciona bordas arredondadas com um raio de 8px */
+  aspect-ratio: 1 / 1; /* Mantém a razão de aspecto 1:1 para garantir que cada quadrado tenha altura e largura iguais */
+  display: flex; /* Define o layout interno como flexível */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+  /* Adicionando sombra */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  /* 0px: deslocamento horizontal da sombra (nenhum deslocamento horizontal) */
+  /* 4px: deslocamento vertical da sombra (a sombra se desloca 4px para baixo) */
+  /* 8px: desfoque da sombra (quanto maior o valor, mais difusa a sombra) */
+  /* rgba(0, 0, 0, 0.2): cor da sombra (preta com 20% de opacidade) */
+}
+

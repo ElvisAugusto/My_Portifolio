@@ -1,0 +1,22 @@
+.header {
+    background-color: #0004ff; /* Define a cor de fundo do cabeçalho. */
+    padding: 1rem; /* Adiciona preenchimento ao redor do conteúdo do cabeçalho. */
+    color: white; /* Define a cor do texto como branco. */
+    height: 220px;
+  }
+  
+  .nav-links {
+    list-style: none; /* Remove os marcadores de lista padrão. */
+    display: flex; /* Exibe os itens da lista em uma linha (layout flexível). */
+    gap: 1rem; /* Adiciona espaço entre os itens da lista. */
+  }
+  
+  .nav-links li a {
+    color: white; /* Define a cor do texto dos links como branco. */
+    text-decoration: none; /* Remove a sublinhado padrão dos links. */
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado quando o link é passado com o mouse. */
+  }
+  

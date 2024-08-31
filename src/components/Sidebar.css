@@ -1,0 +1,120 @@
+/* Sidebar.css */
+
+/* Estiliza a barra lateral */
+.sidebar {
+  width: 400px; /* Define a largura da barra lateral */
+  position: absolute; /* Faz com que a barra lateral role junto com a página */
+  top: 254px; /* Alinha a barra lateral a 250px do topo da página (ajustável conforme necessário) */
+  right: 0; /* Alinha a barra lateral à direita da página */
+  background-color: #f8f9fa; /* Define a cor de fundo da barra lateral */
+  padding: 20px; /* Adiciona espaçamento interno de 20px em todos os lados */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil à esquerda da barra lateral */
+  font-family: 'Arial', sans-serif; /* Define a fonte dos textos na barra lateral */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total do elemento */
+}
+
+/* Estiliza a lista de itens dentro da barra lateral */
+.sidebar ul {
+  list-style: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Estiliza cada item da lista dentro da barra lateral */
+.sidebar ul li {
+  margin-top: 5px;
+  margin-bottom: 5px; /* Adiciona um espaço de 10px abaixo de cada item da lista */
+}
+
+/* Estiliza os botões dos tópicos principais */
+.button-primary {
+  background-color: #007bff; /* Define a cor de fundo azul dos botões principais */
+  border: none; /* Remove a borda padrão dos botões */
+  color: white; /* Define a cor do texto dos botões como branco */
+  font-size: 18px; /* Define o tamanho da fonte dos botões principais */
+  cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão */
+  padding: 15px; /* Adiciona espaçamento interno de 15px em todos os lados */
+  width: 100%; /* Faz com que o botão ocupe toda a largura do seu contêiner */
+  text-align: left; /* Alinha o texto à esquerda dentro do botão */
+  border-radius: 8px; /* Adiciona um arredondamento de 8px nos cantos do botão */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transições suaves para mudanças de cor e transformação */
+  display: flex; /* Usa flexbox para alinhar itens dentro do botão */
+  justify-content: space-between; /* Espaça os itens filhos igualmente dentro do botão */
+  align-items: center; /* Alinha os itens filhos verticalmente ao centro */
+  position: relative; /* Permite posicionar elementos filhos de forma absoluta dentro do botão */
+}
+
+/* Estiliza o botão quando o mouse está sobre ele */
+.button-primary:hover {
+  background-color: #0056b3; /* Altera a cor de fundo para um azul mais escuro ao passar o mouse */
+  transform: translateX(2px); /* Move o botão 2px para a direita, criando um efeito de deslizamento */
+}
+
+/* Estiliza o ícone dentro dos botões principais */
+.button-primary .icon {
+  font-size: 12px; /* Define o tamanho da fonte do ícone */
+  transition: transform 0.1s ease; /* Adiciona uma transição suave para a rotação do ícone */
+}
+
+/* Estiliza o ícone quando o botão está ativo */
+.button-primary.active .icon {
+  transform: rotate(0deg); /* Restaura o ícone à sua posição original quando o botão está ativo */
+}
+
+/* Estiliza o botão principal quando ele está ativo (clicado) */
+.button-primary.active {
+  background-color: #0056b3; /* Altere para a cor que desejar */
+  color: #ffffff; /* Você também pode ajustar a cor do texto, se necessário */
+}
+
+
+/* Estiliza os subitens dentro da barra lateral */
+.subtopics {
+  margin-top: 10px; /* Adiciona um espaço de 10px acima dos subitens */
+  padding-left: 20px; /* Adiciona um espaçamento interno de 20px à esquerda dos subitens */
+  max-height: 0; /* Define a altura máxima inicial como 0 (oculta os subitens por padrão) */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura máxima definida */
+  transition: max-height 0.1s ease; /* Adiciona uma transição suave para a alteração da altura máxima */
+  
+}
+
+/* Mostra os subitens quando a classe "active" é adicionada */
+.subtopics.active {
+  max-height: 500px; /* Define uma altura máxima para exibir os subitens quando ativos */
+  color: #ffffff; /* Você também pode ajustar a cor do texto, se necessário */
+}
+
+
+/* Estiliza cada item dentro dos subitens */
+.subtopics li {
+  margin-bottom: 5px; /* Adiciona um espaço de 5px abaixo de cada subitem */
+}
+
+/* Estiliza os botões dos subitens */
+.button-subtopic {
+  background-color: #6ccef5; /* Define a cor de fundo azul claro dos botões de subitens */
+  font-size: 16px; /* Define o tamanho da fonte dos botões de subitens */
+  padding: 10px; /* Adiciona espaçamento interno de 10px em todos os lados */
+  width: 350px; /* Define a largura dos botões */
+  text-align: left; /* Alinha o texto à esquerda dentro do botão */
+  border-radius: 6px; /* Adiciona um arredondamento de 6px nos cantos do botão */
+  color: #ffffff; /* Define a cor do texto dos botões como branco */
+  border: none; /* Remove a borda padrão dos botões */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transições suaves para mudanças de cor e transformação */
+  display: block; /* Faz com que o botão ocupe a largura total definida */
+  margin-left: auto; /* Alinha o botão à direita dentro do seu contêiner pai */
+  margin-right: 2px; /* Garante que não haja margem à direita */
+}
+/* Estiliza os botões dos subitens */
+.button-subtopic.active {
+  background-color: #0056b3; /* Altere para a cor que desejar */
+  color: #ffffff; /* Você também pode ajustar a cor do texto, se necessário */
+}
+
+/* Estiliza o botão dos subitens quando o mouse está sobre ele */
+.button-subtopic:hover {
+  background-color: #5bb0dc; /* Altera a cor de fundo para um azul mais escuro ao passar o mouse */
+  transform: translateX(2px); /* Move o botão 5px para a direita, criando um efeito de deslizamento */
+}
+
